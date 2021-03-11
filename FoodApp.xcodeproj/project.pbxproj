@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A79165E25F9E681004D2C08 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A79165D25F9E681004D2C08 /* FoodTableViewCell.swift */; };
 		7A8AE81B25F8B7C500CE94A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AE81A25F8B7C500CE94A2 /* AppDelegate.swift */; };
 		7A8AE81D25F8B7C500CE94A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AE81C25F8B7C500CE94A2 /* SceneDelegate.swift */; };
 		7A8AE81F25F8B7C500CE94A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8AE81E25F8B7C500CE94A2 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A79165D25F9E681004D2C08 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		7A8AE81725F8B7C500CE94A2 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A8AE81A25F8B7C500CE94A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A8AE81C25F8B7C500CE94A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		7A8AE82E25F8B7D100CE94A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7A79165D25F9E681004D2C08 /* FoodTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				7A8AE83525F8B91800CE94A2 /* Food.swift in Sources */,
 				7A8AE83725F8B99A00CE94A2 /* Model.swift in Sources */,
 				7A8AE81D25F8B7C500CE94A2 /* SceneDelegate.swift in Sources */,
+				7A79165E25F9E681004D2C08 /* FoodTableViewCell.swift in Sources */,
 				7A8AE83225F8B8D500CE94A2 /* Constants.swift in Sources */,
 				7A8AE83925F8BC0F00CE94A2 /* Response.swift in Sources */,
 			);

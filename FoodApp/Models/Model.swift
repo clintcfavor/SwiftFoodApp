@@ -35,8 +35,6 @@ class Model {
                         self.delegate?.foodsFetched(response.hints!)
                     }
                 }
-                
-                dump(response)
             } catch {
                 print(error)
             }

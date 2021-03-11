@@ -36,14 +36,14 @@ class ViewController: UIViewController, UITableViewDelegate, ModelDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.FOOD_CELL_ID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.FOOD_CELL_ID, for: indexPath) as! FoodTableViewCell
         
-        let label = self.foods[indexPath.row].label
+        let food = self.foods[indexPath.row]
 
-        cell.textLabel?.text = label
+        cell.setCell(food)
         
         return cell
     }
-
+    
 }
 
