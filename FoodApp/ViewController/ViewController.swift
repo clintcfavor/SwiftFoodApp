@@ -7,9 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, ModelDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, ModelDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var foodSearchBar: UISearchBar!
     
     var model = Model()
     var foods = [Food]()
@@ -20,10 +21,11 @@ class ViewController: UIViewController, UITableViewDelegate, ModelDelegate, UITa
         
         tableView.dataSource = self
         tableView.delegate = self
+        foodSearchBar.delegate = self
         
         model.delegate = self
         
-        model.getFood()
+        model.getFood(searchString: "")
     }
     
     func foodsFetched(_ foods: [Food]) {
@@ -45,5 +47,10 @@ class ViewController: UIViewController, UITableViewDelegate, ModelDelegate, UITa
         return cell
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        model.getFood(searchString: searchText)
+        
+        tableView.reloadData()
+    }
 }
 

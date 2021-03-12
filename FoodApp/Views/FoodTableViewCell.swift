@@ -9,7 +9,7 @@ import UIKit
 
 class FoodTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var thumbnailImageView: UIImageView!
+    @IBOutlet weak var foodSearchBar: UISearchBar!
     @IBOutlet weak var foodLabel: UILabel!
     @IBOutlet weak var enercKcal: UILabel!
     @IBOutlet weak var procnt: UILabel!

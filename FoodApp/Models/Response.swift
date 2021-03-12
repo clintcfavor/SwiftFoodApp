@@ -17,6 +17,6 @@ struct Response:Decodable {
     init (from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-        self.hints = try container.decode([Food].self, forKey: .hints)
+        self.hints = try container.decodeIfPresent([Food].self, forKey: .hints)
     }
 }

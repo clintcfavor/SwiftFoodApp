@@ -14,8 +14,9 @@ protocol ModelDelegate {
 class Model {
     var delegate:ModelDelegate?
     
-    func getFood() {
-        let url = URL(string: Constants.API_URL)
+    func getFood(searchString:String?) {
+        let encodedSearchString = searchString!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let url = URL(string: Constants.API_URL + encodedSearchString!)
         
         guard url != nil else { return }
         
